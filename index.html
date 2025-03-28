@@ -14,7 +14,32 @@
 
   <link rel="stylesheet" href="assets/css/styles.css">
   <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.css">
-
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          backgroundImage: {
+          'hero': "url('./assets/images/a.jpg')",
+          'hero2': "url('./assets/images/b.jpg')",
+        },
+          colors: {
+            primary: '#006BFD',
+            secondary: '#ea47ed',
+            gray: {
+              lighter: '#FAF7F3',
+              light: '#323232',
+              dark: '#1C2C3C',
+              txt: '#252800',
+            },
+          },
+          fontFamily: {
+            manrope: ['Manrope', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
 </head>
 
 <body>
@@ -67,7 +92,7 @@
     <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
       <!-- Left column: Description and buttons -->
       <div class="md:w-1/2 text-center md:text-left mb-8 md:mb-0">
-        <h2 class="text-5xl font-bold mb-4">Blue Star <span class="text-primary">Landing</span> Page</h2>
+        <h2 class="text-5xl font-bold mb-4">Cayden Capital </h2>
         <p class="my-7">Tailrfjcerpocpawnsptrap, it does not provide a series of predefined classes for elements such as
           buttons or tables.</p>
         <div class="space-x-2">
@@ -75,85 +100,33 @@
       </div>
 
       <!-- Right column: Responsive image -->
-      <div class="md:w-1/2">
+      <div class="w-full md:w-full">
         <img src="/assets/images/1.png" alt="Image" class="w-full md:mx-auto md:max-w-md" />
       </div>
     </div>
   </section>
 
-  <section id="pic1" class="py-16 bg-gray-dark">
+  <section id="pic1" class="w-screen h-[600px] bg-hero bg-cover bg-center bg-fixed">
 
-    <div class="container  mx-auto flex flex-col md:flex-row items-center justify-between">
-     <img src="assets/images/a.jpg" alt="A">
-      
-    </div>
   </section>
 
-  <section id="results" class="bg-gray-lighter py-16 success-metrics">
+  <section id="cayden" class="bg-white py-16 success-metrics">
     <div class="container mx-auto">
-      <!-- First row: Title and subtitle -->
-      <div class="text-center mb-12">
-        <h2 class="text-5xl font-bold mb-4">Success Metrics</h2>
-        <p class="text-lg text-primary font-semibold">Measuring our achievements and milestones</p>
+        
+        <p class="text-lg text-black ">  Cayden is an investor club focused on the technology sector, at he VC stage and in public markets
+          The idea behind Cayden is that every partner has the ability to contribute the group's success while at the same time  benefiting from centralized execution, administration and risk management
+          Our partners are a selected group with backgrounds ranging from tech, to finance, to wellness, retail and real-estate</p>
       </div>
 
-      <!-- Second row: Four columns with success metrics -->
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-        <div
-          class="success-metric bg-white p-6 rounded-lg shadow-lg text-center group hover:bg-primary hover:text-white transition-all duration-300">
-          <h3 class="text-2xl font-bold text-primary counter" data-target-value="20">0</h3>
-          <p class="text-lg">Happy Clients</p>
-        </div>
-        <div
-          class="success-metric bg-white p-6 rounded-lg shadow-lg text-center group hover:bg-primary hover:text-white transition-all duration-300">
-          <h3 class="text-2xl font-bold text-primary counter" data-target-value="45">0</h3>
-          <p class="text-lg">Team members</p>
-        </div>
-        <div
-          class="success-metric bg-white p-6 rounded-lg shadow-lg text-center group hover:bg-primary hover:text-white transition-all duration-300">
-          <h3 class="text-2xl font-bold text-primary counter" data-target-value="500">0</h3>
-          <p class="text-lg">Projects Completed</p>
-        </div>
-        <div
-          class="success-metric bg-white p-6 rounded-lg shadow-lg text-center group hover:bg-primary hover:text-white transition-all duration-300">
-          <h3 class="text-2xl font-bold text-primary ">24/7</h3>
-          <p class="text-lg">Support Available</p>
-        </div>
-      </div>
+
     </div>
   </section>
 
-  <section id="reviews" class="bg-white py-16 px-4">
-    <div class="container mx-auto max-w-screen-xl px-4 testimonials">
-      <div class="text-center mb-12 lg:mb-20">
-        <h2 class="text-5xl font-bold mb-4 text-white">What Our Clients Say</h2>
-        <p class="text-lg text-primary font-semibold">Discover the experiences of our satisfied clients</p>
-      </div>
-
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide flex flex-col space-y-4">
-            <img class="w-20 h-20 rounded-full mx-auto object-cover" src="/assets/images/testimonials-1.jpg" alt="User Image">
-            <h3 class="text-lg font-medium text-gray-700 text-primary">John Doe</h3>
-            <h6 class="text-base text-gray-500 max-w-[800px] text-white">
-              "The service provided by Github exceeded my expectations. I was impressed by their professionalism and
-              attention to detail. I highly recommend their services."
-            </h6>
-          </div>
-  
-          <div class="swiper-slide flex flex-col space-y-4">
-            <img class="w-20 h-20 rounded-full mx-auto object-cover" src="/assets/images/testimonials-2.jpg" alt="User Image">
-            <h3 class="text-lg font-medium text-gray-700 text-primary">John Doe</h3>
-            <h6 class="text-base text-gray-500 max-w-[800px] text-white">
-              "Working with Blue star team was an absolute pleasure. They were responsive, reliable, and delivered exceptional results. I look forward to collaborating with them again in the future."
-            </h6>
-          </div>
-        </div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      </div>
-    </div>
+  <section id="pic2" class="w-screen h-[600px] bg-hero2 bg-cover bg-center bg-fixed">
+    
   </section>
+
+
 
   <section id="portfolio" class="portfolio-section py-16 px-4">
     <div class="container mx-auto">
@@ -245,43 +218,7 @@
     </div>
     </section>
   
-  <section id="team" class="bg-gray-dark py-16 px-4">
-    <div class="container mx-auto">
-      <div class="text-center mb-12 lg:mb-20">
-        <h2 class="text-5xl font-bold mb-4 text-white">Meet Our Team</h2>
-        <p class="text-lg text-primary font-semibold">Get to know the talented individuals behind our success</p>
-      </div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
-        <div class="bg-white rounded-lg overflow-hidden shadow-md">
-            <img src="/assets/images/team-1.png" alt="Team Member 1" class="w-full h-auto">
-            <div class="p-4 text-center">
-                <h3 class="text-lg font-semibold text-primary">John Doe</h3>
-                <p class="text-gray-dark">CEO</p>
-            </div>
-        </div>
-        <div class="bg-white rounded-lg overflow-hidden shadow-md">
-            <img src="/assets/images/team-2.png" alt="Team Member 2" class="w-full h-auto">
-            <div class="p-4 text-center">
-                <h3 class="text-lg font-semibold text-primary">Jane Smith</h3>
-                <p class="text-gray-dark">CTO</p>
-            </div>
-        </div>
-        <div class="bg-white rounded-lg overflow-hidden shadow-md">
-            <img src="/assets/images/team-3.png" alt="Team Member 3" class="w-full h-auto">
-            <div class="p-4 text-center">
-                <h3 class="text-lg font-semibold text-primary">David Johnson</h3>
-                <p class="text-gray-dark">Marketing Director</p>
-            </div>
-        </div>
-        <div class="bg-white rounded-lg overflow-hidden shadow-md">
-            <img src="/assets/images/team-4.png" alt="Team Member 4" class="w-full h-auto">
-            <div class="p-4 text-center">
-                <h3 class="text-lg font-semibold text-primary">Emily Brown</h3>
-                <p class="text-gray-dark">Lead Developer</p>
-            </div>
-        </div>
-    </div>
-  </section>
+
 
   
   <section id="contact" class="bg-cover bg-no-repeat bg-center relative py-16 px-2">
