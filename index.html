@@ -13,7 +13,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="assets/css/styles.css">
-  <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.css">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -47,7 +46,7 @@
     <div class="container mx-auto flex justify-between items-end py-4">
       <!-- Left section: Logo -->
       <div class="flex items-center">
-        <img src="assets/images/logo.png" alt="Logo" class="h-8 md:h-20 w-auto mr-4">
+        <img src="assets/images/logo.png" alt="Logo" class="h-11 md:h-20 w-auto mr-4">
       </div>
 
       <!-- Hamburger menu (for mobile) -->
@@ -59,35 +58,32 @@
         </button>
       </div>
 
-      <!-- Center section: Menu -->
-      <nav class="hidden md:flex md:flex-grow justify-end  ">
-        <ul class="flex space-x-8 text-white">
-          <li><a href="#home" class="text-black p-3" >Cayden</a></li>
-          <li><a href="#cayden" class="text-black p-3 " >Our Firm</a></li>
-          <li><a href="#contact" class="text-black p-3" >Contact</a></li>
+      <!-- Desktop section: Menu -->
+      <nav class="hidden md:flex md:flex-grow justify-end items-center">
+        <ul class="flex space-x-8">
+          <li><a href="#home" class="text-gray-dark">Cayden</a></li>
+          <li><a href="#cayden" class="text-gray-dark" >Our Firm</a></li>
+          <li><a href="#contact" class="text-gray-darks" >Contact</a></li>
         </ul>
       </nav>
 
-      <!-- Right section: Buttons (for desktop) -->
-      <div class="hidden lg:flex items-center space-x-4">
-      </div>
     </div>
   </header>
 
   <!-- Mobile menu -->
-  <nav id="mobile-menu-placeholder" class="mobile-menu hidden flex flex-col items-center space-y-8 md:hidden">
-    <ul>
-      <li><a href="#home" class="hover:text-secondary ">Cayden</a></li>
-      <li><a href="#cayden" class="hover:text-secondary f">Our Firm</a></li>
-      <li><a href="#contact" class="text-black ">Contact</a></li>
+  <nav id="mobile-menu-placeholder" class="mobile-menu hidden flex flex-col items-center md:hidden">
+    <ul class="space-y-6">
+      <li><a href="#home" class="text-gray-dark">Cayden</a></li>
+      <li><a href="#cayden" class="text-gray-dark">Our Firm</a></li>
+      <li><a href="#contact" class="text-gray-dark">Contact</a></li>
     </ul>
   </nav>
-
+<!-- Title section -->
   <section id="home" class="bg-white py-16">
     <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
       <!-- Left column: Description and buttons -->
       <div class="md:w-1/2 text-center md:text-left mb-8 md:mb-0">
-        <h2 class="text-3xl mb-4">Cayden Capital </h2>
+        <h2 class="text-gray-dark text-3xl mb-4">Cayden Capital </h2>
         <div class="space-x-2">
         </div>
       </div>
@@ -96,8 +92,8 @@
 
   <section  class="bg-hero bg-no-repeat bg-[length:100vw_auto] h-[500px] w-full">
 </section>
-
-  <section id="cayden" class="bg-white py-8 success-metrics">
+  <!-- Description section -->
+  <section id="cayden" class="bg-white py-8 m-10 success-metrics">
     <div class="container mx-auto">
         
         <p class="text-lg text-black ">  Cayden is an investor club focused on the technology sector, at he VC stage and in public markets
@@ -195,7 +191,6 @@
     </div>
 </footer>
 
-  <script src="node_modules/swiper/swiper-bundle.js"></script>
   <script src="assets/js/script.js"></script>
 </body>
 
