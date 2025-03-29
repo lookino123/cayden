@@ -22,8 +22,6 @@ content: [
     },
     extend: {
       colors: {
-        primary: '#006BFD',
-        secondary: '#ea47ed',
         gray: {
           lighter: '#FAF7F3',
           light: '#323232',
