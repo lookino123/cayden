@@ -1,5 +1,10 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
+
+
+// The relevant script is in the HTML file
+
+
 module.exports = {
 content: [
   "./src/**/*.{html,js,ts,jsx,tsx}",
