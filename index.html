@@ -41,7 +41,7 @@
 </head>
 
 <body>
-  <header class="bg-white  sticky top-0 z-50">
+  <header class="bg-white shadow-lg sticky top-0 z-50">
     <div class="container mx-auto flex justify-between items-end py-4">
       <!-- Left section: Logo -->
       <div class="flex items-center">
@@ -60,7 +60,7 @@
       <!-- Desktop section: Menu -->
       <nav class="hidden md:flex md:flex-grow justify-end items-center">
         <ul class="flex space-x-8">
-          <li><a href="#home" class="text-gray-dark">Cayden</a></li></ul></li>
+          <li><a href="#home" class="text-gray-dark">Cayden</a></li>
           <li><a href="#cayden" class="text-gray-dark" >Our Firm</a></li>
           <li><a href="#contact" class="text-gray-darks" >Contact</a></li>
         </ul>
@@ -102,12 +102,12 @@
     </div>
   </section>
 
-  <section id="pic2" class="w-screen h-[400px] bg-hero2 bg-fixed bg-cover bg-center ">
+  <section id="pic2" class="bg-hero2 bg-fixed bg-no-repeat bg-[length:100vw_auto] h-[500px] w-full">
     
   </section>
 
 
-
+  <!-- Key points section -->
   <section id="portfolio" class="portfolio-section py-8 px-4">
     <div class="container mx-auto">
 
@@ -154,12 +154,11 @@
   
   <!--Map-->
   <section id="contact" class="bg-cover bg-no-repeat bg-center relative py-8 px-2">
-    <div class="h-[600px] gap-16 items-center relative  p-10 m-10 shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] rounded-xl max-w-6xl mx-auto text-gray-dark" >
-      <div>
+    <div class="flex md:flex-row flex-col items-center relative md:w-[80%] w-full  p-5 m-2 hover:shadow-lg shadow-md  rounded-xl mx-auto text-gray-dark" >
+      <div class="flex flex-col m-4 md:w-1/3 w-full">
         <h2 class="text-2xl m-6 text-center">Contact</h2>
         <p class="text-gray-dark mt-1 text-center">280 Park Ave S</p>
         <p class="text-gray-dark mt-1 text-center">10017 New York, New York</p>
-
         <ul class="mt-4 flex justify-center lg:space-x-6 max-lg:flex-col max-lg:items-center max-lg:space-y-2 ">
           <li class="flex items-center hover:text-blue-500">
             <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill='currentColor'
@@ -174,7 +173,7 @@
           </li>
         </ul>
       </div>
-      <div class="flex relative  m-10">
+      <div class="flex relative w-[80%] h-[300px]  md:h-[450px] md:m-10 m-4">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.017598876229!2d-73.9899642868703!3d40.73963827127005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a114447db9%3A0x8912c5c4082487e8!2s280%20Park%20Ave%20S%2C%20New%20York%2C%20NY%2010010!5e0!3m2!1sen!2sus!4v1743202572484!5m2!1sen!2sus" 
           class="left-0 top-0 h-full w-full rounded-lg" frameborder="0"
           allowfullscreen>
@@ -186,6 +185,7 @@
   <footer class="bg-caydenblue text-white py-16">
     <div class="mx-auto text-center md:grid-cols-4 gap-8">
        <p>The material contained in this website is for information purposes only and does not constitute an offer for sale.</p>
+       <br/>
        <p>©2020 by Cayden Capital</p>
     </div>
 </footer>
